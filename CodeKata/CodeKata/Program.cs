@@ -2,9 +2,16 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        #region 두 수의 차
+        static int solution(int num1, int num2)
+        {            
+            return num1 - num2;
+        }    
+    #endregion
+
+    static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            
         }
     }
 }

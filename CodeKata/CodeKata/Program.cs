@@ -32,6 +32,12 @@
             return num1 == num2 ? 1 : -1;
         }
         #endregion
+        #region 두 수의 합
+        static int solution6(int num1, int num2)
+        {
+            return num1 + num2;
+        }
+        #endregion
         static void Main(string[] args)
         {
             

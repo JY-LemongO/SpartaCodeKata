@@ -20,6 +20,12 @@
             return num1 / num2;
         }
         #endregion
+        #region 나이 출력
+        static int solution4(int age)
+        {
+            return 2023 - age;
+        }
+        #endregion
         static void Main(string[] args)
         {
             

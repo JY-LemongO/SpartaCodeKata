@@ -26,6 +26,12 @@
             return 2023 - age;
         }
         #endregion
+        #region 숫자 비교하기
+        static int solution5(int num1, int num2)
+        {            
+            return num1 == num2 ? 1 : -1;
+        }
+        #endregion
         static void Main(string[] args)
         {
             

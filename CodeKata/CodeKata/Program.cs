@@ -39,18 +39,27 @@
         }
         #endregion
         #region 7. 두 수의 나눗셈
-        static int solution(int num1, int num2)
+        static int solution7(int num1, int num2)
         {
             return (int)((float)num1 / num2 * 1000);
         }
         #endregion
         #region 8. 각도기
-        static int solution(int angle)
+        static int solution8(int angle)
         {
             return angle > 0 ? angle < 90 ? 1 : angle == 90 ? 2 : angle < 180 ? 3 : 4 : -1;
         }
         #endregion
-
+        #region 9.짝수의 합
+        static int solution9(int n)
+        {
+            int answer = 0;
+            for (int i = 1; i <= n; i++)
+                if (i % 2 == 0)
+                    answer += i;
+            return answer;
+        }
+        #endregion
         static void Main(string[] args)
         {
             

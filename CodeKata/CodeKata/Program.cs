@@ -60,6 +60,16 @@
             return answer;
         }
         #endregion
+        #region 10. 배열의 평균값
+        static double solution(int[] numbers)
+        {
+            double answer = 0;            
+            foreach (int n in numbers)
+                answer += n;
+            
+            return answer / numbers.Length;
+        }
+        #endregion
         static void Main(string[] args)
         {
             

@@ -44,6 +44,12 @@
             return (int)((float)num1 / num2 * 1000);
         }
         #endregion
+        #region 8. 각도기
+        static int solution(int angle)
+        {
+            
+        }
+        #endregion
 
         static void Main(string[] args)
         {

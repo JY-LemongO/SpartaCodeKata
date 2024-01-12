@@ -38,6 +38,13 @@
             return num1 + num2;
         }
         #endregion
+        #region 7. 두 수의 나눗셈
+        static int solution(int num1, int num2)
+        {
+            return (int)((float)num1 / num2 * 1000);
+        }
+        #endregion
+
         static void Main(string[] args)
         {
             

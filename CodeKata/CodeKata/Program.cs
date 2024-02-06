@@ -70,20 +70,35 @@
             return answer / numbers.Length;
         }
         #endregion
-        
-        static int solution(int num)
+        #region 49. 두 개 뽑아서 더하기
+        static int[] solution49(int[] numbers)
         {
-            double x = num;
-            int count = 0;
-            for (int i = 0; i < 500; i++)
+            List<int> list = new List<int>();
+
+            for (int i = 0; i < numbers.Length - 1; i++)
+                for (int j = i + 1; j < numbers.Length; j++)
+                    list.Add(numbers[i] + numbers[j]);
+
+            list.Sort();
+            int temp = -1;
+            for (int i = 0; i < list.Count; i++)
             {
-                if (x == 1)
-                    return count;
-                x = x % 2 == 0 ? x / 2 : x * 3 + 1;
-                count++;
+                if (list[i] == temp)
+                    list[i] = -1;
+                else
+                    temp = list[i];
             }
-            return -1;
+
+            List<int> answerList = new List<int>();
+
+            foreach (int a in list)
+                if (a != -1)
+                    answerList.Add(a);
+
+            int[] answer = answerList.ToArray();
+            return answer;
         }
+        #endregion
 
         static void Main(string[] args)
         {
